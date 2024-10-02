@@ -207,19 +207,19 @@ args.num_feature=g1_entropy.shape[0]
 
 simulator=Sensitivity(args)
 
-    #p1_100,p2_100=simulator.get_group_sparse(args.num_feature,k)
-till_100=g1_entropy[0:100]
-from_100_to_200=g1_entropy[100:200]
-from_200_to_full=g1_entropy[200:]
-unselected_g1=np.concatenate((till_100,from_200_to_full))
-till_100=g2_entropy[0:100]
-from_100_to_200=g2_entropy[100:200]
-from_200_to_full=g2_entropy[200:]
-unselected_g2=np.concatenate((till_100,from_200_to_full))
+ #p1_100,p2_100=simulator.get_group_sparse(args.num_feature,k)
+# till_100=g1_entropy[0:100]
+# from_100_to_200=g1_entropy[100:200]
+# from_200_to_full=g1_entropy[200:]
+# unselected_g1=np.concatenate((till_100,from_200_to_full))
+# till_100=g2_entropy[0:100]
+# from_100_to_200=g2_entropy[100:200]
+# from_200_to_full=g2_entropy[200:]
+# unselected_g2=np.concatenate((till_100,from_200_to_full))
 
 
 
-p=Permutator(unselected_g1,unselected_g2,feat_info,args)
+p=Permutator(g1_entropy,g2_entropy,feat_info,args)
 pval=p.metapermutation()
 print(pval)
 #save the p-valueS
