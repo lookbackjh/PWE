@@ -1,0 +1,10 @@
+$p$-value for feature 1 is 1.0
+$p$-value for feature 2 is 0.0
+$p$-value for feature 3 is 0.0
+$p$-value for feature 4 is 1.0
+$p$-value for feature 5 is 0.0
+$p$-value for feature 6 is 0.0
+$p$-value for feature 7 is 0.0
+$p$-value for feature 8 is 0.0
+$p$-value for feature 9 is 1.0
+$p$-value for feature 10 is 0.0
