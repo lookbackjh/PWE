@@ -10,11 +10,11 @@ By constructing realistic probability models for OTU distributions, it enables t
 ---
 
 Here, we show the permutaion for community-level hypothesis testing for synthetic dataset as referenced in the paper. 
-run [simulation.py] to try various simulation, you can change various conditions such as overdispersion parameter $\theta$. 
+run `simulation.py` to try various simulation, you can change various conditions such as overdispersion parameter $\theta$. 
 
 
 ## Tutorial
 
 ---
 
-from Example folder, you can see examples of synthetic data generation and  meta analysis of them, , origianl version of permutation with phylum-level microbiome. Instructions are detailed in Jupyter notebook.
+from Example folder, you can see examples of synthetic data generation and  meta analysis of them, original version of permutation with phylum-level microbiome. Instructions are detailed in Jupyter notebook.
