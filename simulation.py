@@ -45,21 +45,24 @@ def seed_everything(seed):
 
 
 seed=1234
-seeds=[10]
-betas=[0.9]
+#seeds=[10]
+
 
 seed_everything(seed)
 if args.scenario==1: # scenario 1 for top 0-10 selection
     start_idx=0
     end_idx=10
+    beta=0.9
     sort_option=True
 elif args.scenario==2: ## scenario 2 for top 100-200 selection
     start_idx=100
     end_idx=200
+    beta=0.9
     sort_option=True
 else: ## scenario 3 for random 300 selection
     start_idx=0
     end_idx=300
+    beta=0.95
     sort_option=False
 
 
