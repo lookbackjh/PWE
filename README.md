@@ -17,4 +17,4 @@ run `simulation.py` to try various simulation, you can change various conditions
 
 ---
 
-from Example folder, you can see examples of synthetic data generation and  meta analysis of them, original version of permutation with phylum-level microbiome. Instructions are detailed in Jupyter notebook.
+from Example folder, you can see examples of synthetic data generation and  meta analysis of them. Instructions are detailed in Jupyter notebook.
