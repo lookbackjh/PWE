@@ -123,8 +123,8 @@ theta_2=0.0001 # overdispersion parameter
 
 overdispersion=(1-theta_2)/theta_2
 
-g1=np.random.dirichlet(g1_param*(1/overdispersion),size=args.num_samples)
-g2=np.random.dirichlet(g2_param*(1/overdispersion), size=args.num_samples)
+g1=np.random.dirichlet(g1_param*(overdispersion),size=args.num_samples)
+g2=np.random.dirichlet(g2_param*(overdispersion), size=args.num_samples)
 
 #create count poisson
 g1_count_total=np.zeros(args.num_samples)
