@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pylab as plt
 import numpy as np
 import argparse
-from src.Senstivity import Sensitivity
+#from src.Senstivity import Sensitivity
 import copy
 import math
 from tqdm import tqdm
@@ -16,7 +16,7 @@ import os
 #import dirichlet
 from tqdm import tqdm
 parser = argparse.ArgumentParser(description='Args Sparse Simulation')
-parser.add_argument('--p_num', type=int, default=1000, help='num ber of permutation')
+parser.add_argument('--p_num', type=int, default=10, help='num ber of permutation')
 parser.add_argument('--x_grid_start',type=int, default=1,help='start of the x-axis for integration')
 parser.add_argument('--x_grid_end',type=int, default=20,help='end of the x-axis for integration')
 parser.add_argument('--interval',type=float,default=0.1,help='interval for x-axis' )
@@ -25,7 +25,7 @@ parser.add_argument('--repeat_num',type=int, default=1, help='to see the mean an
 parser.add_argument('--predefined',type=bool,default=False,help='False if there is predefined meta analysis')
 parser.add_argument('--theta',type=float,default=0.0001,help='theta value for dirichlet')
 parser.add_argument('--num_samples',type=int,default=50,help='number of samples')
-parser.add_argument('--scenario',type=int,default=1,help='scenario number')
+parser.add_argument('--scenario',type=int,default=1,help='scenario number 1,2,3')
 args, _ = parser.parse_known_args()
 
 
@@ -205,7 +205,7 @@ feat_info=np.zeros(g1_entropy.shape[0])
 feat_info+=1.1 ## as this is simulated  case, you cannot consider the prior-posterior case. 
 args.num_feature=g1_entropy.shape[0]
 
-simulator=Sensitivity(args)
+#simulator=Sensitivity(args)
 
  #p1_100,p2_100=simulator.get_group_sparse(args.num_feature,k)
 # till_100=g1_entropy[0:100]
